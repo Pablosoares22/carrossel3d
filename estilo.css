@@ -1,0 +1,115 @@
+
+
+
+body{)
+    
+    margin: 0;
+    background: #05073c;
+    color:#ffffff;
+
+}
+
+
+
+h1{
+    text-shadow: 1px 2px 5px rgb(0, 255, 200);
+    text-align: center;
+    color: rgb(143, 142, 142);
+
+}
+
+
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 10s infinite forwards linear;
+    
+}
+
+
+
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    display: flex;
+    
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+     }
+
+     to{
+         transform: rotateY(-360deg); 
+
+     } 
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://img.wallpapic-br.com/i3432-843-727/thumb/espaco-sideral-planeta-lua-imagem-de-fundo.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://img.wallpapic-br.com/i5011-425-419/thumb/mundo-da-fantasia-natureza-lua-espaco-sideral-imagem-de-fundo.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://img.wallpapic-br.com/i8043-415-69/thumb/planeta-espaco-sideral-lua-universo-imagem-de-fundo.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://img.wallpapic-br.com/i3632-945-729/thumb/espaco-sideral-azuis-nebulosa-imagem-de-fundo.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://img.wallpapic-br.com/i8621-241-725/thumb/espaco-montanhas-sideral-lua-imagem-de-fundo.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://img.wallpapic-br.com/i6435-221-735/thumb/natureza-nuvens-lua-planeta-imagem-de-fundo.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://img.wallpapic-br.com/i7243-823-737/thumb/espaco-carros-planeta-terra-imagem-de-fundo.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://img.wallpapic-br.com/i9668-935-819/thumb/espaco-fogos-de-artificio-claro-chamas-imagem-de-fundo.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://img.wallpapic-br.com/i9744-323-737/thumb/espaco-sideral-lua-planeta-terra-imagem-de-fundo.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
